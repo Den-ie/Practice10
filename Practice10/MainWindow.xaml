@@ -1,0 +1,52 @@
+﻿<Window x:Class="Practice10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice10"
+        mc:Ignorable="d"
+        Title="10пркта" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <ListBox x:Name="masList"/>
+
+            <GroupBox Grid.Row="2">
+                <Grid>
+                    <Button Margin="10,85,405,75"
+                            Content="Добавить"
+                            Click="Create"/>
+
+                    <Button Margin="399,85,5,75"
+                            Content="Найти"
+                            Click="Find"/>
+
+                    <Button Margin="10,150,405,10"
+                            Content="О программе"
+                            Click="AboutProgramm"/>
+
+                    <Button Margin="399,150,5,10"
+                            Content="Выход"
+                            Click="Exit"/>
+
+                    <TextBox Margin="399,35,5,135"
+                             x:Name="NumberA"/>
+
+                    <Label Margin="399,10,5,175"
+                           Content="Число А"/>
+                    
+                    <TextBox Margin="10,35,405,135"
+                        x:Name="MasLength"/>
+                    
+                    <Label Margin="10,10,389,175"
+                           Content="Размер массива"/>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+    </Grid>
+</Window>
